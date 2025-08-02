@@ -4,6 +4,7 @@ import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
 import ATSFriendlyResume from './ResumeBuilder';
+import { useParams } from 'react-router-dom';
 
 const AppStyles = `
   body {
@@ -42,6 +43,7 @@ const AppStyles = `
 `;
 
 function App() {
+  const {id} = useParams()
   const [resume, setResume] = useState(null); // Initialize with null for loading state
   const [isDownloading, setIsDownloading] = useState(false);
   const resumeRef = useRef();
@@ -49,7 +51,7 @@ function App() {
   useEffect(() => {
     async function getResume() {
       try {
-        const res = await axios.get("https://bio.vizhva.com/portfolio/3iwbahjjQMTAX84ZF3fZ");
+        const res = await axios.get(`https://bio.vizhva.com/portfolio/${id}`);
         if (res.data && res.data.data) {
           setResume(res.data.data);
         } else {
