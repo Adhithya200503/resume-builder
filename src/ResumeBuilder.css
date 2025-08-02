@@ -1,0 +1,111 @@
+ body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        color: #000;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px 40px;
+    }
+    .header {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .profile-img-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .profile-img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .header h1 {
+        margin: 0;
+        font-size: 2.2em;
+        font-weight: 700;
+    }
+    .header h2 {
+        margin: 5px 0 15px 0;
+        font-weight: 400;
+        font-size: 1.3em;
+        color: #333;
+    }
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        font-size: 0.9em;
+    }
+    .contact-info a {
+        color: #000;
+        text-decoration: none;
+    }
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+    .section {
+        margin-bottom: 25px;
+    }
+    .section h3 {
+        font-size: 1.4em;
+        border-bottom: 2px solid #000;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    .item {
+        margin-bottom: 20px;
+    }
+    .item:last-child {
+        margin-bottom: 0;
+    }
+    .item h4 {
+        margin: 0;
+        font-size: 1.1em;
+    }
+    .item .meta {
+        font-size: 0.9em;
+        color: #555;
+        margin: 2px 0 8px 0;
+        font-weight: 700;
+    }
+    .item .company {
+        font-weight: 400;
+    }
+    .item p, .item ul {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+    }
+    .item ul li {
+        margin-bottom: 5px;
+    }
+    .skills-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    .skills-section li {
+        margin-bottom: 10px;
+    }
+    .skills-section h5 {
+        margin: 0 0 5px 0;
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .skills-section .skill-list {
+       padding: 0;
+       margin: 0;
+    }
+    .skills-section .skill-list li {
+       display: inline-block;
+       margin-right: 10px;
+       margin-bottom: 5px;
+    }
